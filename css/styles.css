@@ -1,0 +1,163 @@
+/* Basic styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+  background: #2e2e2e;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #4b4b4b;
+  padding: 15px;
+}
+
+.navbar a,
+.navbar button {
+  color: #ff6633;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-weight: bold;
+}
+
+.navbar button:hover,
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.description {
+  flex: 1;
+  padding: 2px;
+  background: #2e2e2e;
+  border-radius: 1px;
+  margin-right: 1px;
+}
+
+.calculator {
+  flex: 1;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #ff6633;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #ff4500;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  background: #554400;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 10px;
+  background: #4b4b4b;
+  color: white;
+  font-size: 14px;
+}
+
+/* Light mode styles */
+.light-mode {
+  background: #f0f0f0;
+  color: #dadada;
+}
+
+.light-mode .navbar {
+  background: #e0e0e0;
+}
+
+.light-mode .navbar a,
+.light-mode .navbar button {
+  color: #007bff;
+}
+
+.light-mode .navbar button:hover,
+.light-mode .navbar a:hover {
+  color: #0056b3;
+}
+.light-mode .description p {
+  color: white;
+}
+.light-mode .description,
+.light-mode .calculator {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px #ffffff;
+}
+
+.light-mode input {
+  background: #e0e0e0;
+  color: #fcfcfc;
+}
+
+.light-mode button {
+  background: #007bff;
+  color: #fff;
+}
+
+.light-mode button:hover {
+  background: #0056b3;
+}
+
+.light-mode #result {
+  background: #f8f9fa;
+  color: #ffffff;
+  color: #ffffff;
+}
+
+.light-mode .footer {
+  background: #e0e0e0;
+  color: #ffffff;
+}
+
+style attribute {
+  background-color: rgb(255, 255, 255);
+  color: #ffffff;
+}

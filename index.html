@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Devarsh Kotak</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+  </head>
+  <body>
+    <!-- Header section containing the navigation bar -->
+    <header>
+      <nav class="navbar">
+        <div>
+          <!-- Links to external resources for HTML5, JavaScript, and CSS -->
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+            target="_blank"
+            >HTML5</a
+          >
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            >JavaScript</a
+          >
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+            >CSS</a
+          >
+        </div>
+        <div>
+          <!-- Buttons to toggle between dark and light themes -->
+          <button data-bs-theme-value="dark" onclick="toggleDarkMode(true)">
+            Dark
+          </button>
+          <button data-bs-theme-value="light" onclick="toggleDarkMode(false)">
+            Light
+          </button>
+          <!-- Contact button -->
+          <button>Contact Me</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+      <div class="main-container">
+        <div class="description">
+          <!-- Description of the factorial calculator -->
+          <p>Factorial calculator.</p>
+          <p>n! = 1x2x3 ... xn.</p>
+          <p>e.g. 5! = 120.</p>
+        </div>
+        <div class="calculator">
+          <!-- Input field for entering a number and button to calculate factorial -->
+          <input type="number" id="number" placeholder="Enter a number" />
+          <button onclick="calculateFactorial()">Enter</button>
+          <!-- Display the result of the factorial calculation -->
+          <p id="result" class="screen"></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p>Simple factorial calculator &copy; 2025</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
